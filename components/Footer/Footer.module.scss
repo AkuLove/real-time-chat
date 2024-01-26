@@ -1,0 +1,6 @@
+.logo {
+  @media (min-width: $mobile) {
+    width: 100%;
+    max-width: rem(48);
+  }
+}
