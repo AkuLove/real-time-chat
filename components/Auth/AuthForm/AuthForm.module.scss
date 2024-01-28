@@ -1,0 +1,88 @@
+.form__block {
+  margin-top: 2rem;
+
+  @media (min-width: 640px) {
+    width: 100%;
+    max-width: 28rem;
+  }
+}
+.form__body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+  @media (min-width: 640px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+}
+
+.border {
+  margin-top: 1.5rem;
+
+  &__container {
+    position: relative;
+  }
+
+  &__body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__border {
+    width: 100%;
+    border-top: 1px solid $grayColor;
+  }
+
+  &__textBody {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  &__text {
+    background-color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: $grayDarkColor;
+  }
+}
+
+.socialButtons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.switchMessage {
+  display: flex;
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  gap: 0.5rem;
+  color: $grayDarkColor;
+}
+
+.switchButton {
+  cursor: pointer;
+  text-decoration: underline;
+}

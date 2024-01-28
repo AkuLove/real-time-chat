@@ -1,0 +1,18 @@
+.button {
+  display: inline-flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: center;
+  border-radius: 0.375rem;
+  width: 100%;
+  color: $grayDarkColor;
+  background-color: #ffffff;
+  border: 1px solid $grayColor;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    background-color: #f9fafb;
+  }
+}

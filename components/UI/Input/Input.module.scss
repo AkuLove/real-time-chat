@@ -1,0 +1,38 @@
+.label {
+  display: block;
+  font-size: 0.875rem;
+  padding-bottom: rem(4);
+  line-height: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: $mainColor;
+}
+
+.input {
+  display: block;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.375rem;
+  border-width: 0;
+  border: 1px solid $grayColor;
+  width: 100%;
+  color: $mainColor;
+  box-shadow: 0 1px 2px 0 $grayColor;
+  transition: border ease 0.4s;
+
+  ::placeholder {
+    color: $grayColor;
+  }
+
+  &:focus {
+    border: 1px solid $blueColor;
+    transition: border ease 0.4s;
+  }
+
+  &.error {
+    border: 1px solid $redRoseColor;
+  }
+  &.disabled {
+    opacity: 50%;
+    cursor: default;
+  }
+}
