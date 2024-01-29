@@ -6,6 +6,7 @@ import Input from '@/components/UI/Input/Input';
 import Button from '@/components/UI/Button/Button';
 import AuthSocialButton from '../AuthSocialButton/AuthSocialButton';
 import { BsGithub, BsGoogle } from 'react-icons/bs';
+import axios from 'axios';
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -36,6 +37,7 @@ const AuthForm = () => {
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
     if (variant === 'REGISTER') {
+      axios.post('/api/register', data);
     }
 
     if (variant === 'LOGIN') {
@@ -50,7 +52,7 @@ const AuthForm = () => {
   return (
     <div className={styles.form__block}>
       <div className={styles.form__body}>
-        <form className={styles.form} onSubmit={() => handleSubmit(onSubmit)}>
+        <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           {variant === 'REGISTER' && (
             <Input
               id="name"
