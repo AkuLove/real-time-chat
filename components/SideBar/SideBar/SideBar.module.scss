@@ -1,0 +1,13 @@
+.sideBar {
+  height: 100%;
+  display: flex;
+  max-width: 1240px;
+  column-gap: rem(20);
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  &__content {
+    flex: 1 1 auto;
+  }
+}

@@ -3,7 +3,7 @@ import Logo from '../UI/Logo';
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className="container">
         <div className={styles.logo}>
           <Logo />

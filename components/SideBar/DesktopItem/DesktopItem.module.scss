@@ -1,0 +1,52 @@
+.icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  color: $grayDarkColor;
+}
+
+.link {
+  display: flex;
+  padding: 0.5rem;
+  column-gap: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: $grayDarkColor;
+
+  &:hover {
+    color: #000;
+    background-color: $grayColor;
+
+    .icon {
+      color: #000;
+    }
+  }
+
+  &.active {
+    color: #000;
+    background-color: $grayColor;
+
+    .icon {
+      color: #000;
+    }
+  }
+}
+
+.text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.button {
+  height: 2rem;
+  width: 2rem;
+}

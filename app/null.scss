@@ -113,16 +113,13 @@ legend {
   display: block;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
-
-.wrapper {
+body {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   background-color: $backgroundColor;
 }
 
@@ -131,8 +128,4 @@ body {
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 16px;
-}
-
-main {
-  flex: 1 1 auto;
 }

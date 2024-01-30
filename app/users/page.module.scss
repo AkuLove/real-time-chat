@@ -1,0 +1,13 @@
+.users {
+  display: none;
+  height: 100%;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.sideBar {
+  height: 100%;
+  width: 100%;
+}

@@ -1,3 +1,40 @@
-.logo {
-  max-width: rem(48);
+.footer {
+  padding: rem(8) 0;
+  margin-top: rem(4);
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(4);
+    width: rem(48);
+    align-items: center;
+
+    &:hover {
+      .footer__icon {
+        color: $grayDarkColor;
+      }
+      .footer__text {
+        color: $grayDarkColor;
+      }
+    }
+
+    &:active {
+      .footer__icon {
+        color: $mainColor;
+      }
+      .footer__text {
+        color: $mainColor;
+      }
+    }
+  }
+
+  &__text {
+    color: $mainColor;
+  }
+
+  &__icon {
+    color: $mainColor;
+    width: rem(48);
+    height: rem(48);
+  }
 }

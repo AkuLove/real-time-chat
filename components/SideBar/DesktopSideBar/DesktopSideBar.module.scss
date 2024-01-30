@@ -1,0 +1,27 @@
+.sideBar {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    flex-direction: column;
+    border: 1px solid $grayColor;
+    border-radius: rem(8);
+  }
+
+  &__navigation {
+    display: flex;
+    margin-top: rem(8);
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__list {
+    padding: 0 rem(8);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(8);
+    align-items: flex-start;
+  }
+}
