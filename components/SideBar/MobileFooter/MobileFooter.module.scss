@@ -1,0 +1,15 @@
+.mobileFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-width: 1px;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}

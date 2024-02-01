@@ -1,7 +1,30 @@
 .header {
   padding: rem(12) 0;
-}
 
-.logo {
-  max-width: rem(48);
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: rem(48);
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(4);
+    width: rem(48);
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    color: $mainColor;
+    width: rem(48);
+    height: rem(48);
+  }
 }

@@ -6,10 +6,15 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <Link href="https://github.com/AkuLove" className={styles.footer__link}>
-          <IoLogoGithub className={styles.footer__icon} />
-          <p className={styles.footer__text}>AkuLove</p>
-        </Link>
+        <div className={styles.footer__container}>
+          <Link
+            href="https://github.com/AkuLove"
+            className={styles.footer__link}
+          >
+            <IoLogoGithub className={styles.footer__icon} />
+            <p className={styles.footer__text}>AkuLove</p>
+          </Link>
+        </div>
       </div>
     </footer>
   );

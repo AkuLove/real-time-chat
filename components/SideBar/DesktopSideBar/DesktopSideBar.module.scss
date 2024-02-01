@@ -24,4 +24,24 @@
     row-gap: rem(8);
     align-items: flex-start;
   }
+
+  &__mainInfo {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__avatar {
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 75%;
+    }
+  }
 }

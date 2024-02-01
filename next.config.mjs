@@ -1,14 +1,19 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
   sassOptions: {
     includePaths: ['./'],
     prependData: `@import "styles/mixins.scss";`,
+  },
+  experimental: {
+    swcPlugins: [['next-superjson-plugin', {}]],
+  },
+  images: {
+    domains: [
+      'res.cloudinary.com',
+      'avatars.githubusercontent.com',
+      'lh3.googleusercontent.com',
+    ],
   },
 };
 
