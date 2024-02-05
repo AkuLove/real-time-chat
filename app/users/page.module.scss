@@ -1,13 +1,13 @@
 .users {
   display: none;
-  height: 100%;
-
+  width: 100%;
   @media (min-width: 1024px) {
     display: block;
   }
 }
 
 .sideBar {
+  display: flex;
+  column-gap: rem(20);
   height: 100%;
-  width: 100%;
 }

@@ -1,0 +1,45 @@
+.box {
+  display: flex;
+  position: relative;
+  padding: 0.75rem;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 100%;
+  background-color: #fff;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: #e6e6e6;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    cursor: pointer;
+  }
+
+  &__body {
+    flex: 1 1 0%;
+    min-width: 0;
+
+    &_focus:focus {
+      outline: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 0.25rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: $mainColor;
+  }
+}

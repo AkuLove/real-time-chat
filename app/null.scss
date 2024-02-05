@@ -1,11 +1,12 @@
 $primaryFont: var(--font-poppins);
+$secondaryFont: var(--font-roboto);
 
 * {
   padding: 0px;
   margin: 0px;
   border: none;
   min-width: 0;
-  font-family: $primaryFont, sans-serif;
+  font-family: $primaryFont, $secondaryFont, sans-serif;
 }
 
 *,

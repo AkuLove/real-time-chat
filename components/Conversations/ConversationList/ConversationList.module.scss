@@ -1,0 +1,48 @@
+.conversations {
+  display: block;
+  overflow-y: auto;
+  padding-bottom: 5rem;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    display: block;
+    padding-bottom: 1.5rem;
+    width: 20rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+
+  &__messages {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+}
+
+.addUsers {
+  box-sizing: content-box;
+  max-height: rem(20);
+  max-width: rem(20);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: $grayDarkColor;
+  background-color: $grayColor;
+  cursor: pointer;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+
+  &:hover {
+    opacity: 75%;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
