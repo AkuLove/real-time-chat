@@ -1,0 +1,19 @@
+.body {
+  // 70px - conversations header height
+  // 63px - conversations form height
+  // 24px - header padding
+  height: calc(100% - 70px - 63px - 24px);
+  width: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  flex: 1 1 0%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  @media (min-width: 1024px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

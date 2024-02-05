@@ -2,6 +2,11 @@
   padding: rem(8) 0;
   margin-top: rem(4);
 
+  @media (max-width: 1024px) {
+    padding: rem(0) 0;
+    margin-top: rem(0);
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,7 +17,7 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(4);
-    width: rem(48);
+    width: rem(40);
     align-items: center;
 
     &:hover {
@@ -44,7 +49,7 @@
 
   &__icon {
     color: $mainColor;
-    width: rem(48);
-    height: rem(48);
+    width: rem(40);
+    height: rem(40);
   }
 }

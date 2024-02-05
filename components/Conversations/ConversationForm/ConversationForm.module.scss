@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 0.5rem;
+  align-items: center;
+  border-top: 1px solid $grayColor;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: 1024px) {
+    gap: 1rem;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      gap: 1rem;
+    }
+  }
+
+  &__addPhoto {
+    color: $blueColor;
+  }
+
+  &__button {
+    display: flex;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: $blueColor;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blueDarkColor;
+      transition-property: background-color, border-color, color, fill, stroke,
+        opacity, box-shadow, transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+    }
+  }
+
+  &__buttonIcon {
+    color: #fff;
+  }
+}

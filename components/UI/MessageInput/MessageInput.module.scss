@@ -1,0 +1,20 @@
+.input {
+  position: relative;
+  width: 100%;
+
+  &__input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+    font-weight: 300;
+    color: #000;
+    background-color: $grayColor;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -24,7 +24,8 @@ const ConversationList: React.FC<ConversationListProps> = ({
     <aside
       className={clsx(
         styles.conversations,
-        isOpen ? styles.open : styles.hidden
+        isOpen && styles.open,
+        conversationId && styles.hidden
       )}
     >
       <div className={styles.conversations__body}>
